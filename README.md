@@ -13,7 +13,7 @@ Export credentials into environment variables.
 `export ACCESS_KEY=xxx && export SECRET_KEY=xxx`
 
 Or set as an arguments.  
-`Nifcloud::DNS::Record.new('access_key', 'secret_key', 'your-domain.com')`
+`Nifcloud::DNS::Record.new('your-domain.com', access_key: 'xxx', secret_key: 'xxx')`
 
 * Create A record.
 
