@@ -9,6 +9,11 @@ $ gem install nifcloud-dns
 ```
 
 ## Usage
+Export credentials into environment variables.  
+`export ACCESS_KEY=xxx && export SECRET_KEY=xxx`
+
+Or set as an arguments.  
+`Nifcloud::DNS::Record.new('access_key', 'secret_key', 'your-domain.com')`
 
 * Create A record.
 
@@ -50,12 +55,12 @@ Please register your test domain (`yourdomain.com`) into nifcloud DNS before sta
 ## Development
 
 1. Setup
-  * bundle install --path vendor
+    * bundle install --path vendor
 2. Fix or write codes ex) lib/nifcloud/dns/record.rb
 3. Check features by repl
-  * bundle console
+    * bundle console
 4. Build a gem
-  * bundle exec rake build
+    * bundle exec rake build
 
 ## Contributing
 
