@@ -1,7 +1,9 @@
 PATH
   remote: .
   specs:
-    nifcloud-dns (0.1.0)
+    nifcloud-dns (0.1.1)
+      ruby-hmac
+      xml-simple
 
 GEM
   remote: https://rubygems.org/
@@ -32,8 +34,6 @@ DEPENDENCIES
   nifcloud-dns!
   rake (~> 10.0)
   rspec (~> 3.0)
-  ruby-hmac
-  xml-simple
 
 BUNDLED WITH
    1.16.1

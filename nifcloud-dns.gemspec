@@ -23,6 +23,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "ruby-hmac"
-  spec.add_development_dependency "xml-simple"
+  spec.add_dependency "ruby-hmac"
+  spec.add_dependency "xml-simple"
 end
