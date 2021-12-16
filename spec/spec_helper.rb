@@ -13,5 +13,7 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 
-  SimpleCov.start
+  SimpleCov.start do
+    add_filter 'vendor'
+  end
 end
