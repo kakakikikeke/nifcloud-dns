@@ -1,3 +1,7 @@
+require 'hmac-sha1'
+require 'base64'
+require 'time'
+
 module Nifcloud
   class Auth
     ALGORITHM = 'HmacSHA1'

@@ -1,4 +1,6 @@
-require "nifcloud/client"
+require 'nifcloud/client'
+require 'xmlsimple'
+require 'cgi'
 
 module Nifcloud
   module DNS

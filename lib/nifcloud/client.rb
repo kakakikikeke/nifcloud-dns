@@ -1,9 +1,10 @@
 require "nifcloud/auth"
 require "nifcloud/dns/response"
+require 'net/https'
 
 module Nifcloud
   class Client < Auth
-    ENDPOINT = 'https://dns.api.cloud.nifty.com/'
+    ENDPOINT = 'https://dns.api.nifcloud.com/'
     VERSION = '2012-12-12N2013-12-16'
     AUTHORIZATION_HEADER = 'X-Nifty-Authorization'
     DATE_HEADER = 'X-Nifty-Date'

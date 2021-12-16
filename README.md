@@ -47,15 +47,13 @@ res = zone.list
 
 Please register your test domain (`yourdomain.com`) into nifcloud DNS before starting the test.
 
-* export ACCESS_KEY=xxx
-* export SECRET_KEY=xxx
-* export ZONE=yourdomain.com
-* bundle exec rake spec
+* ACCESS_KEY=xxx SECRET_KEY=xxx ZONE=yourdomain.com bundle exec rake spec
 
 ## Development
 
 1. Setup
-    * bundle install --path vendor
+    * bundle config path vendor
+    * bundle install
 2. Fix or write codes ex) lib/nifcloud/dns/record.rb
 3. Check features by repl
     * bundle console

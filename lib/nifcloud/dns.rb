@@ -1,4 +1,3 @@
-# coding: utf-8
 require "nifcloud/dns/version"
 require "nifcloud/dns/zone"
 require "nifcloud/dns/record"
