@@ -10,7 +10,7 @@ GEM
   specs:
     diff-lcs (1.4.4)
     docile (1.4.0)
-    rake (10.5.0)
+    rake (12.3.3)
     rexml (3.2.5)
     rspec (3.10.0)
       rspec-core (~> 3.10.0)
@@ -41,7 +41,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 2.0)
   nifcloud-dns!
-  rake (~> 10.0)
+  rake (~> 12.3.3)
   rspec (~> 3.0)
   simplecov (~> 0.21)
 
