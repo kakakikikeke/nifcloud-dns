@@ -1,8 +1,11 @@
-require "nifcloud/auth"
-require "nifcloud/dns/response"
+# frozen_string_literal: true
+
+require 'nifcloud/auth'
+require 'nifcloud/dns/response'
 require 'net/https'
 
 module Nifcloud
+  # Client for nifcloud dns
   class Client < Auth
     ENDPOINT = 'https://dns.api.nifcloud.com/'
     VERSION = '2012-12-12N2013-12-16'
@@ -15,7 +18,7 @@ module Nifcloud
       @http, @req, @uri = nil
     end
 
-    def get path
+    def get(path)
       init path
       @req = Net::HTTP::Get.new @uri.request_uri
       init_header
@@ -33,7 +36,7 @@ module Nifcloud
       Nifcloud::DNS::Response.new(XmlSimple.xml_in(res.body), res.code, res.body)
     end
 
-    def delete path
+    def delete(path)
       init path
       @req = Net::HTTP::Delete.new @uri.request_uri
       init_header
@@ -43,7 +46,7 @@ module Nifcloud
 
     private
 
-    def init path
+    def init(path)
       @uri = URI.parse("#{ENDPOINT}#{VERSION}/#{path}")
       @http = Net::HTTP.new(@uri.host, @uri.port)
       @http.use_ssl = true

@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
 module Nifcloud
   module DNS
+    # Class that manages api response information
     class Response
       def initialize(body, code, raw)
         @body = body
