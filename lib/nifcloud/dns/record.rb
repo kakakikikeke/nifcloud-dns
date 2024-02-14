@@ -44,13 +44,13 @@ module Nifcloud
             Comment: ['content' => comment],
             Changes: [
               Change: {
-                Action: [content: action],
+                Action: action,
                 ResourceRecordSet: {
-                  Name: [content: name],
-                  Type: [content: type],
-                  TTL: [content: ttl],
+                  Name: name,
+                  Type: type,
+                  TTL: ttl,
                   ResourceRecords: {
-                    Value: [content: value]
+                    Value: value
                   }
                 }
               }
