@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    nifcloud-dns (0.3.0)
+    nifcloud-dns (0.3.1)
       ruby-hmac
       xml-simple
 
@@ -15,7 +15,7 @@ GEM
     diff-lcs (1.5.1)
     docile (1.4.0)
     e2mmap (0.1.0)
-    jaro_winkler (1.5.6)
+    jaro_winkler (1.6.0)
     json (2.7.2)
     kramdown (2.4.0)
       rexml
@@ -23,12 +23,12 @@ GEM
       kramdown (~> 2.0)
     language_server-protocol (3.17.0.3)
     method_source (1.1.0)
-    nokogiri (1.16.5-arm64-darwin)
+    nokogiri (1.16.6-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.16.5-x86_64-darwin)
+    nokogiri (1.16.6-x86_64-darwin)
       racc (~> 1.4)
-    parallel (1.24.0)
-    parser (3.3.1.0)
+    parallel (1.25.1)
+    parser (3.3.3.0)
       ast (~> 2.4.1)
       racc
     pry (0.14.2)
@@ -37,29 +37,29 @@ GEM
     pry-doc (1.5.0)
       pry (~> 0.11)
       yard (~> 0.9.11)
-    racc (1.7.3)
+    racc (1.8.0)
     rainbow (3.1.1)
     rake (12.3.3)
     rbs (2.8.4)
     regexp_parser (2.9.2)
     reverse_markdown (2.1.1)
       nokogiri
-    rexml (3.2.8)
-      strscan (>= 3.0.9)
+    rexml (3.3.0)
+      strscan
     rspec (3.13.0)
       rspec-core (~> 3.13.0)
       rspec-expectations (~> 3.13.0)
       rspec-mocks (~> 3.13.0)
     rspec-core (3.13.0)
       rspec-support (~> 3.13.0)
-    rspec-expectations (3.13.0)
+    rspec-expectations (3.13.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
     rspec-mocks (3.13.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
     rspec-support (3.13.1)
-    rubocop (1.63.5)
+    rubocop (1.64.1)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
