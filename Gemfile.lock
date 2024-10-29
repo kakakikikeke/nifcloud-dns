@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    nifcloud-dns (0.3.1)
+    nifcloud-dns (0.3.2)
       ruby-hmac
       xml-simple
 
