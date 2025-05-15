@@ -1,4 +1,4 @@
-name: ci
+name: gem
 
 on:
   workflow_dispatch:
