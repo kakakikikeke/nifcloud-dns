@@ -14,7 +14,7 @@ module Nifcloud
     NAMESPACE = 'https://route53.amazonaws.com/doc/2012-12-12/'
 
     def initialize(access_key, secret_key)
-      super(access_key, secret_key)
+      super
       @http, @req, @uri = nil
     end
 

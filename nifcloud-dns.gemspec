@@ -23,6 +23,6 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = '~> 3.2'
   spec.metadata['rubygems_mfa_required'] = 'true'
 
-  spec.add_runtime_dependency 'ruby-hmac'
-  spec.add_runtime_dependency 'xml-simple'
+  spec.add_dependency 'ruby-hmac'
+  spec.add_dependency 'xml-simple'
 end
