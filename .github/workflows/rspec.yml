@@ -1,0 +1,22 @@
+name: Rspec test
+
+on:
+  push:
+    branches:
+      - "master"
+
+jobs:
+  rspec:
+    runs-on: ubuntu-latest
+    env:
+      PASS_SUPPORT: true
+      MODE: dev
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      - name: Run Rspec
+        run: bundle exec rspec spec/nifcloud/client_spec.rb
