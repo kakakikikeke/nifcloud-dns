@@ -54,7 +54,7 @@ GEM
     rbs (3.9.5)
       logger
     regexp_parser (2.11.3)
-    reverse_markdown (3.0.0)
+    reverse_markdown (3.0.1)
       nokogiri
     rexml (3.4.4)
     rspec (3.13.2)
@@ -120,7 +120,7 @@ GEM
     unicode-emoji (4.1.0)
     xml-simple (1.1.9)
       rexml
-    yard (0.9.37)
+    yard (0.9.38)
     yard-activesupport-concern (0.0.1)
       yard (>= 0.8)
     yard-solargraph (0.1.0)
