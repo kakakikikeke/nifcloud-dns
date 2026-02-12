@@ -55,9 +55,12 @@ Please register your test domain (`yourdomain.com`) into nifcloud DNS before sta
     * bundle config path vendor
     * bundle install
 2. Fix or write codes ex) lib/nifcloud/dns/record.rb
-3. Check features by repl
+3. Test local
+    * bundle exec rspec spec/nifcloud/client_spec.rb
+    * bundle exec rubocop .
+4. Check features by repl
     * bundle console
-4. Build a gem
+5. Build a gem
     * bundle exec rake build
 
 ## Contributing

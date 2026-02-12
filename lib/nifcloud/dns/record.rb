@@ -41,16 +41,18 @@ module Nifcloud
         body = {
           '@xmlns': Nifcloud::Client::NAMESPACE,
           ChangeBatch: {
-            Comment: ['content' => comment],
+            Comment: [{ 'content' => comment }],
             Changes: [
-              Change: {
-                Action: action,
-                ResourceRecordSet: {
-                  Name: name,
-                  Type: type,
-                  TTL: ttl,
-                  ResourceRecords: {
-                    Value: value
+              {
+                Change: {
+                  Action: action,
+                  ResourceRecordSet: {
+                    Name: name,
+                    Type: type,
+                    TTL: ttl,
+                    ResourceRecords: {
+                      Value: value
+                    }
                   }
                 }
               }

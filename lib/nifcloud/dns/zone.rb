@@ -25,10 +25,10 @@ module Nifcloud
       def add(zone, comment: '') # rubocop:disable Metrics/MethodLength
         body = {
           '@xmlns': Nifcloud::Client::NAMESPACE,
-          Name: [content => zone],
-          CallerReference: [content => ''],
-          HostedZoneConfig: [content => ''],
-          Comment: [content => comment]
+          Name: [{ content => zone }],
+          CallerReference: [{ content => '' }],
+          HostedZoneConfig: [{ content => '' }],
+          Comment: [{ content => comment }]
         }
         options = {
           AttrPrefix: true,
