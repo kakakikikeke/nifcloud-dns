@@ -99,7 +99,7 @@ GEM
       simplecov_json_formatter (~> 0.1)
     simplecov-html (0.13.2)
     simplecov_json_formatter (0.1.4)
-    solargraph (0.59.1)
+    solargraph (0.59.2)
       ast (~> 2.4.3)
       backport (~> 1.2)
       benchmark (~> 0.4)
@@ -130,7 +130,7 @@ GEM
     unicode-emoji (4.2.0)
     xml-simple (1.1.9)
       rexml
-    yard (0.9.43)
+    yard (0.9.44)
     yard-activesupport-concern (0.0.1)
       yard (>= 0.8)
     yard-solargraph (0.1.0)
