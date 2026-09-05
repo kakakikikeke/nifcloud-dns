@@ -11,14 +11,20 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: ruby/setup-ruby@v1
+      - name: Checkout repository
+        # actions/checkout@7.0.1
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - name: Set up Ruby
+        # ruby/setup-ruby v1.321.0
+        uses: ruby/setup-ruby@95ef2b042f9d7a56d8268cba8559e2842e2ad01b
+        with:
+          bundler-cache: true
       - run: bundle install
 
       - name: Setup git config
         run: |
-          git config --global user.email "cdl.yoshinaka@gmail.com"
-          git config --global user.name "kakakikikeke"
+          git config --global user.email ${{ secrets.GIT_EMAIL }}
+          git config --global user.name ${{ secrets.GIT_NAME }}
 
       - name: git
         run: |
