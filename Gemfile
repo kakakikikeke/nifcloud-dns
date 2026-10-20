@@ -13,6 +13,9 @@ group :development do
   gem 'rspec', '~> 3.0'
   gem 'simplecov', '~> 0.21'
   gem 'solargraph'
+  gem 'sorbet'
+  gem 'sorbet-runtime'
+  gem 'tapioca'
 end
 
 # Specify your gem's dependencies in nifcloud-dns.gemspec

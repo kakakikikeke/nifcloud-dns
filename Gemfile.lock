@@ -19,6 +19,7 @@ GEM
     diff-lcs (1.6.2)
     docile (1.4.1)
     erb (6.0.7)
+    erubi (1.13.1)
     highline (3.0.1)
     io-console (0.9.4)
     jaro_winkler (1.7.0)
@@ -31,6 +32,7 @@ GEM
     lint_roller (1.1.0)
     logger (1.7.0)
     method_source (1.1.0)
+    netrc (0.11.0)
     nokogiri (1.19.4-aarch64-linux-gnu)
       racc (~> 1.4)
     nokogiri (1.19.4-arm-linux-gnu)
@@ -67,6 +69,9 @@ GEM
     racc (1.8.1)
     rainbow (3.1.1)
     rake (12.3.3)
+    rbi (0.5.0)
+      prism (~> 1.0)
+      rbs (>= 4.0.1)
     rbs (4.2.0)
       logger
       prism (>= 1.6.0)
@@ -78,6 +83,7 @@ GEM
     regexp_parser (2.13.1)
     reline (0.7.0)
       io-console (~> 0.5)
+    require-hooks (0.5.1)
     reverse_markdown (3.0.2)
       nokogiri
     rexml (3.4.4)
@@ -110,6 +116,7 @@ GEM
       prism (~> 1.7)
     ruby-hmac (0.4.0)
     ruby-progressbar (1.13.0)
+    rubydex (0.4.1-arm64-darwin)
     simplecov (0.22.0)
       docile (~> 1.1)
       simplecov-html (~> 0.11)
@@ -141,7 +148,13 @@ GEM
       yard (~> 0.9, >= 0.9.24)
       yard-activesupport-concern (~> 0.0)
       yard-solargraph (~> 0.1)
+    sorbet (0.6.13580)
+      sorbet-static (= 0.6.13580)
     sorbet-runtime (0.6.13580)
+    sorbet-static (0.6.13580-universal-darwin)
+    sorbet-static-and-runtime (0.6.13580)
+      sorbet (= 0.6.13580)
+      sorbet-runtime (= 0.6.13580)
     sord (7.1.0)
       commander (~> 5.0)
       parlour (~> 9.1)
@@ -149,7 +162,27 @@ GEM
       rbs (>= 3.0, < 5)
       sorbet-runtime
       yard
+    spoom (1.8.12)
+      erubi (>= 1.10.0)
+      prism (>= 0.28.0)
+      rbi (>= 0.4.2)
+      rbs (>= 4.0.0.dev.5)
+      rexml (>= 3.2.6)
+      sorbet-static-and-runtime (>= 0.5.10187)
+      thor (>= 0.19.2)
     stringio (3.2.0)
+    tapioca (0.20.0)
+      benchmark
+      bundler (>= 2.2.25)
+      netrc (>= 0.11.0)
+      parallel (>= 1.21.0)
+      rbi (>= 0.4.1)
+      require-hooks (>= 0.2.2)
+      rubydex (>= 0.1.0.beta10)
+      sorbet-static-and-runtime (>= 0.6.12698)
+      spoom (>= 1.7.16)
+      thor (>= 1.2.0)
+      tsort
     thor (1.5.0)
     tilt (2.9.0)
     tsort (0.2.0)
@@ -182,6 +215,9 @@ DEPENDENCIES
   rspec (~> 3.0)
   simplecov (~> 0.21)
   solargraph
+  sorbet
+  sorbet-runtime
+  tapioca
 
 BUNDLED WITH
    2.5.16
